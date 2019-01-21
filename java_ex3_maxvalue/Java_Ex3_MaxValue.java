@@ -29,12 +29,15 @@ public class Java_Ex3_MaxValue {
         int3 = scan.nextInt();
         
         // Print largest number using the conditional operator
+        /*
         int maxTemp = int1 > int2 ? int1 : int2;
         int max = maxTemp > int3 ? maxTemp : int3;
         System.out.println("Max: " + max);
+        */
         // Print largest number using Math.max
-        
-        
+        int maxTemp = Math.max(int1, int2);
+        int max = Math.max(maxTemp, int3);
+        System.out.println("Max: " + max);
     }
     
 }
